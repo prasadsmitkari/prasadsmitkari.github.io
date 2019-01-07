@@ -1,0 +1,46 @@
+<mat-grid-list cols="12" rowHeight="100px">
+  <mat-grid-tile
+
+      [colspan]="6"
+      [rowspan]="3"
+      >
+    <img @right  src="{{tiles[0].src}}" alt="Smiley face" style="height: calc(302px);
+    width: calc(((17.33333% - 0.916667px) * 6) + 5px);">
+  </mat-grid-tile>
+  <mat-grid-tile
+
+      [colspan]="6"
+      [rowspan]="3"
+      >
+    <img @down src="{{tiles[1].src}}" alt="Smiley face" style="height: calc(302px);
+    width: calc(((17.33333% - 0.916667px) * 6) + 5px);">
+  </mat-grid-tile>
+  <mat-grid-tile
+
+      [colspan]="6"
+      [rowspan]="3"
+      >
+    <img @top src="{{tiles[2].src}}" alt="Smiley face" style="height: calc(302px);
+    width: calc(((17.33333% - 0.916667px) * 6) + 5px);">
+  </mat-grid-tile>
+  <mat-grid-tile
+
+      [colspan]="6"
+      [rowspan]="3"
+      >
+    <img @left src="{{tiles[3].src}}" alt="Smiley face" style="height: calc(302px);
+    width: calc(((17.33333% - 0.916667px) * 6) + 5px);">
+  </mat-grid-tile>
+</mat-grid-list>
+
+
+
+<!-- <mat-grid-list cols="12" rowHeight="100px">
+  <mat-grid-tile *ngFor="let item of tiles"
+      [colspan]="6"
+      [rowspan]="3"
+      >
+    <img @right (click)="animate()" src={{item.src}} alt="Smiley face" style="height: calc(302px);
+    width: calc(((17.33333% - 0.916667px) * 6) + 5px);">
+  </mat-grid-tile>
+</mat-grid-list> -->
